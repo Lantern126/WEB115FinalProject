@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>WEB-115 Final Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="lantern.ico" type="image/x-icon">
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="projectJS.js"></script>
+</head>
+<body>
+    
+    <!--Place Holder for Banner-->
+    <h1>Lewis Strother<br>WEB-115 sec 0001<br>Build Your Meal Plan</h1>
+
+    <!-- 
+    <form>
+        <label for="mondayBreak">Monday Breakfast</label>
+        <input type="text" id="mondayBreak">
+    </form>
+    -->
+
+    <br>
+    <div class="lunchBox">
+
+    <!--form--Meal Plan table--start------------------------------------------------------------------------------>
+
+        <form id="lunchboxForm">
+            <table id="lunchboxtable" class="lunchboxtable">
+                <thead>
+                    <tr>
+                        <th id="blankcell" class="blankcell"></th>
+                        <th>Breakfaxt</th>
+                        <th>Snack 1</th>
+                        <th>Lunch</th>
+                        <th>Snack 2</th>
+                        <th>Dinner</th>
+                    </tr>
+                </thead>
+                <tbody id="lunchboxtbody" class="lunchboxtbody">
+                    <!-- Monday -->
+                    <tr class="lunchboxDay" data-day="Monday">  
+                        <td>Monday</td>
+                        <td><input type="text" class="dailyMeals" data-meal="breakfast"></td> <!-- brakfast -->
+                        <td><input type="text" class="dailyMeals" data-meal="snack1"></td> <!-- snack1 -->
+                        <td><input type="text" class="dailyMeals" data-meal="lunch"></td> <!-- lunch -->
+                        <td><input type="text" class="dailyMeals" data-meal="snack2"></td> <!-- snack2 -->
+                        <td><input type="text" class="dailyMeals" data-meal="dinner"></td> <!-- dinner -->
+                    </tr>
+
+                    <!-- Tuesday -->
+                    <tr class="lunchboxDay" data-day="Tuesday">  
+                        <td>Tuesday</td>
+                        <td><input type="text" class="dailyMeals" data-meal="breakfast"></td> <!-- brakfast -->
+                        <td><input type="text" class="dailyMeals" data-meal="snack1"></td> <!-- snack1 -->
+                        <td><input type="text" class="dailyMeals" data-meal="lunch"></td> <!-- lunch -->
+                        <td><input type="text" class="dailyMeals" data-meal="snack2"></td> <!-- snack2 -->
+                        <td><input type="text" class="dailyMeals" data-meal="dinner"></td> <!-- dinner --> 
+                    </tr>
+
+                    <!-- Wednesday -->
+                    <tr class="lunchboxDay" data-day="Wednesday">    
+                        <td>Wednesday</td>
+                        <td><input type="text" class="dailyMeals" data-meal="breakfast"></td> <!-- brakfast -->
+                        <td><input type="text" class="dailyMeals" data-meal="snack1"></td> <!-- snack1 -->
+                        <td><input type="text" class="dailyMeals" data-meal="lunch"></td> <!-- lunch -->
+                        <td><input type="text" class="dailyMeals" data-meal="snack2"></td> <!-- snack2 -->
+                        <td><input type="text" class="dailyMeals" data-meal="dinner"></td> <!-- dinner --> 
+                    </tr>
+
+                    <!-- Thursday -->
+                    <tr class="lunchboxDay" data-day="Thursday">    
+                        <td>Thursday</td>
+                        <td><input type="text" class="dailyMeals" data-meal="breakfast"></td> <!-- brakfast -->
+                        <td><input type="text" class="dailyMeals" data-meal="snack1"></td> <!-- snack1 -->
+                        <td><input type="text" class="dailyMeals" data-meal="lunch"></td> <!-- lunch -->
+                        <td><input type="text" class="dailyMeals" data-meal="snack2"></td> <!-- snack2 -->
+                        <td><input type="text" class="dailyMeals" data-meal="dinner"></td> <!-- dinner --> 
+                    </tr>
+
+                    <!-- Friday -->
+                    <tr class="lunchboxDay" data-day="Friday">   
+                        <td>Friday</td>
+                        <td><input type="text" class="dailyMeals" data-meal="breakfast"></td> <!-- brakfast -->
+                        <td><input type="text" class="dailyMeals" data-meal="snack1"></td> <!-- snack1 -->
+                        <td><input type="text" class="dailyMeals" data-meal="lunch"></td> <!-- lunch -->
+                        <td><input type="text" class="dailyMeals" data-meal="snack2"></td> <!-- snack2 -->
+                        <td><input type="text" class="dailyMeals" data-meal="dinner"></td> <!-- dinner --> 
+                    </tr>
+
+                    <!-- Saturday -->
+                    <tr class="lunchboxDay" data-day="Saturday">
+                        <td>Saturday</td>
+                        <td><input type="text" class="dailyMeals" data-meal="breakfast"></td> <!-- brakfast -->
+                        <td><input type="text" class="dailyMeals" data-meal="snack1"></td> <!-- snack1 -->
+                        <td><input type="text" class="dailyMeals" data-meal="lunch"></td> <!-- lunch -->
+                        <td><input type="text" class="dailyMeals" data-meal="snack2"></td> <!-- snack2 -->
+                        <td><input type="text" class="dailyMeals" data-meal="dinner"></td> <!-- dinner --> 
+                    </tr>
+
+                    <!-- Sunday -->
+                    <tr class="lunchboxDay" data-day="Sunday">  
+                        <td>Sunday</td>
+                        <td><input type="text" class="dailyMeals" data-meal="breakfast"></td> <!-- brakfast -->
+                        <td><input type="text" class="dailyMeals" data-meal="snack1"></td> <!-- snack1 -->
+                        <td><input type="text" class="dailyMeals" data-meal="lunch"></td> <!-- lunch -->
+                        <td><input type="text" class="dailyMeals" data-meal="snack2"></td> <!-- snack2 -->
+                        <td><input type="text" class="dailyMeals" data-meal="dinner"></td> <!-- dinner --> 
+                    </tr>
+                </tbody>
+            </table>
+        
+            <div class="buttonBox">
+                <table id="buttonTable" class="buttonTable">
+                    <tr>
+                        <td>
+                            <button id="saveButton" type="button" class="button">Save Planner</button>
+                        </td>
+                        <td>
+                            <button id="clearButton" type="button" class="button">Clear Planner</button>
+                        </td>
+                        <td>
+                            <button id="printButton" type="button" class="button">Print Planner</button>
+                        </td>
+                        <td>
+                            <button id="downloadButton" type="button" class="button">Download Planner</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    <!--form--Meal Plan table--end------------------------------------------------------------------------------>
+
+        <div id="lunchboxDisplay" class="lunchboxDisplay">
+            <h2>Your Lunchbox for the Week :)</h2>
+
+            <table id="lunchboxDisplayTable">
+                <thead>
+                    <tr>
+                        <th id="lunchboxDisplayTh"></th>
+                        <th>Breakfast</th>
+                        <th>Snack 1</th>
+                        <th>Lunch</th>
+                        <th>Snack 2</th>
+                        <th>Dinner</th>
+                    </tr>
+                </thead>
+                <tbody id="lunchboxDisplayTableTbody">
+                </tbody>
+            </table>
+        </div><!--id="lunchboxDisplay" class="lunchboxDisplay"-->
+    </div><!--class="lunchBox"------------------------------------------------------------------------------------>
+
+
+    </br>
+
+    <!--Buttons--start-------------------------------------------------------------------------------------------->
+        <!--
+        <form id="buttonForm" class="buttonForm">
+            <table id="buttonTable" class="buttonTable">
+                <tr>
+                    <td>
+                        <button id="saveButton" type="button" class="button">Save Planner</button>
+                    </td>
+                    <td>
+                        <button id="clearButton" type="button" class="button">Clear Planner</button>
+                    </td>
+                    <td>
+                        <button id="printButton" type="button" class="button">Print Planner</button>
+                    </td>
+                    <td>
+                        <button id="downloadButton" type="button" class="button">Download Planner</button>
+                    </td>
+                </tr>
+            </table>
+        </form>       
+        -->
+            <!--
+            <button id="save" type="button" class="button">Save Planner</button>
+            <button id="clear" type="button" class="button">Clear Planner</button>
+            <button id="print" type="button" class="button">Print Planner</button>
+            <button id="download" type="button" class="button">Download Planner</button>
+            -->  
+    <!--Buttons--end-------------------------------------------------------------------------------------------->
+        
+        </br>
+
+    <!--Form--display--start-------------------------------------------------------------------------------------------->
+
+        
+    <!--Form--display--end-------------------------------------------------------------------------------------------->
+
+
+
+    <!-------------------------------------------------------------------------------------------------
+                            ******
+                        **************
+                  ********          ********
+                ****                      ****
+            ****                              ****
+          ****                                  ****
+        ****  **********************************  ****
+      ****    **********************************    ****
+      **      **********************************      **
+    **                ******************                **
+  ****            **************************            ****
+  **              **********      **********              **
+  **            ********              ********            **
+****            ******                  ******            **** 
+**            ********                  ********            **
+**            ******                      ******            **
+**            ******                      ******            **
+**            ******                      ******            **
+**            ********                  ********            **
+****            ******                  ******            ****
+  **            ********              ********            **
+  **              **********      **********              **
+  ****            **************************            ****
+    **                ******************                **
+      **      **********************************      **
+      ****    **********************************    ****
+        ****  **********************************  ****
+          ****                                  ****
+            ****                              ****
+                ****                      ****
+                  ********          ********
+                        **************
+                            ******
+-------------------------------------------------------------------------------------------------->
+
+</body>
+</html>
